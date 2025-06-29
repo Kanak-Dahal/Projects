@@ -1,1 +1,5 @@
 yfinance
+matplotlib
+scipy
+tensorflow
+sklearn
