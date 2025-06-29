@@ -47,5 +47,28 @@ Interactive web application for portfolio construction with real-time optimizati
 git clone https://github.com/your-username/personal-projects.git
 cd personal-projects
 
+
+
+📁 Repository Structure
+.
+├── stock_forecasting/
+│   ├── data_loader.py        # Market data ingestion
+│   ├── models.py             # DL architectures
+│   └── config.yaml           # Hyperparameters
+│
+├── cross_market_dynamics/
+│   ├── data_processor.py     # Cointegration tests
+│   ├── spillover_metrics.py  # Volatility transmission
+│   └── paper.tex             # Manuscript source
+│
+├── portfolio_optimization/
+│   ├── app.py                # Streamlit entrypoint
+│   ├── optimizer.py          # Mean-Variance optimization
+│   └── monte_carlo.py        # Asset path simulations
+│
+├── requirements.txt          # Core dependencies
+├── LICENSE
+└── README.md
+
 # Install project dependencies
 pip install -r requirements.txt
