@@ -1,3 +1,45 @@
+/*
+====================================================
+Project: Coin Flip Game Simulation
+Language: C++17
+Author: [Your Name]
+====================================================
+
+Problem Statement:
+------------------
+We simulate a coin-flip game where a fair coin (50% chance heads, 50% tails)
+is flipped repeatedly until the absolute difference between the number of heads
+and tails becomes 3. Once this condition is met, the game stops.
+
+Rules:
+------
+1. Each flip is equally likely to result in heads or tails.
+2. The game continues until |heads - tails| >= 3.
+3. The payoff is defined as:
+       payoff = 8 - (number of flips played)
+   i.e., fewer flips → higher payoff.
+
+Outputs:
+--------
+From simulating N independent games (here N = 100,000 by default), the program computes:
+1. Average payoff across all games.
+2. Minimum and maximum payoff observed.
+3. Standard deviation of payoff distribution.
+4. Expectation of payoff (weighted by final head/tail probabilities).
+5. Cumulative average probability of heads and tails across all games.
+6. Total runtime of the simulation (in seconds).
+
+Purpose:
+--------
+This program demonstrates the use of:
+- Random number generation (Mersenne Twister, uniform distribution).
+- Vectors, tuples, and algorithms in C++ STL.
+- Basic probability/statistics (expectation, variance, std deviation).
+- Performance measurement with <chrono>.
+
+====================================================
+*/
+
 #include <iostream>
 #include <cmath>
 #include <random>
@@ -117,3 +159,4 @@ int main() {
 
     return 0;
 }
+
